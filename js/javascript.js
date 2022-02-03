@@ -31,6 +31,6 @@ function getCurrentDate() {
     var ct = new Date();
     var utc = new Date(ct.getTime() + ct.getTimezoneOffset());
     utc.setUTCHours(utc.getUTCHours() + 3); // enkel fix
-    const datetime = utc.toISOString().split(':')[0] + ":00:00Z"; // lyckas inte få den rätt efter toISOString, två timmar fel, förklara gärna varför
+    const datetime = utc.toISOString().split(':')[0] + ":00:00Z"; 
     return datetime;
 }
