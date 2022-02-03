@@ -1,0 +1,146 @@
+﻿<!DOCTYPE HTML>
+<html lang="sv">
+
+<head>
+    <title>Djupviks Hamn</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/javascript.js" type="module"></script>
+</head>
+
+<body>
+    <section id="main">
+        <section id="header">
+            <section id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html">Djupviks<span class="logo_colour"> Hamn</span></a></h1>
+                    <h2>Gotlands fiskehamn</h2>
+                </div>
+            </section>
+            <nav id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="turism.html">Turism</a></li>
+                    <li><a href="medlem.html">Medlem</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav> <!--end menubar-->
+        </section> <!--end header-->
+        <section id="site_content">
+            <div id="banner"></div>
+            <section id="sidebar_container">
+                <section class="sidebar">
+                    <div class="sidebar_top"></div>
+                    <section class="sidebar_item">
+                        <h3>Djupviks temperatur</h3>
+                        <p id="temp"></p>
+                    </section>
+                    <div class="sidebar_base"></div>
+                </section> <!-- end sidebar 1 -->
+                <section class="sidebar">
+                    <div class="sidebar_top"></div>
+                    <section class="sidebar_item">
+                        <h3>Länkar</h3>
+                        <ul>
+                            <li><a href="english.html">For english speaking</a></li>
+                            <li><a href="bilder.html">Fler bilder</a></li>
+                            <li><a href="gästhamn.html">Information om Gästhamnen</a></li>
+                        </ul>
+                    </section>
+                    <div class="sidebar_base"></div>
+                </section> <!-- end sidebar 2 -->
+            </section> <!--end sidebar-->
+            <section id="content">
+                <h1 class="bold">Fler bilder på Djupviks Hamn</h1>
+                <section class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="jpgs/D-1.jpg" alt="Man som fiskar vid hamnen" style="width:100% ">
+                        <div class="text">Man som fiskar vid hamnen</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="jpgs/D-2.jpg" alt="Man som fiskar vid hamnen 2" style="width:100%">
+                        <div class="text">Man som fiskar vid hamnen 2</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="jpgs/D-3.jpg" alt="Stugor vid stranden" style="width:100%">
+                        <div class="text">Stugor vid stranden</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="jpgs/D-10.jpg" alt="Strand vid havet" style="width:100%">
+                        <div class="text">Strand vid havet</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="jpgs/D-11.jpg" alt="Strand vid havet 2" style="width:100%">
+                        <div class="text">Strand vid havet 2</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="jpgs/D-12.jpg" alt="Stugor och bårtar vid stranden" style="width:100%">
+                        <div class="text">Stugor och bårtar vid stranden</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="jpgs/D-13.jpg" alt="Djupvik vid klippor" style="width:100%">
+                        <div class="text">Djupvik vid klippor</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </section>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script> <!-- fick det inte att fungera med att lägga det i javascript.js, så jag lägger koden här-->
+            </section> <!--end content box-->
+        </section> <!--end site_content-->
+        <section id="footer">
+            <nav><a href="index.html">Start</a> | <a href="turism.html">Turism</a> | <a href="medlem.html">Medlem</a> | <a href="historia.html">Historia</a> | <a href="kontakt.html">Kontakta oss</a></nav>
+            <p>Copyright &copy; Djupviks Hamnförening c/o Ekholm</p>
+        </section>
+    </section>
+</body>
+</html>

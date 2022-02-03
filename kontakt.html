@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<html lang="sv">
+
+<head>
+    <title>Djupviks Hamn</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/javascript.js" type="module"></script>
+</head>
+
+<body>
+    <section id="main">
+        <section id="header">
+            <section id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html">Djupviks<span class="logo_colour"> Hamn</span></a></h1>
+                    <h2>Gotlands fiskehamn</h2>
+                </div>
+            </section>
+            <nav id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">Start</a></li> <!-- class="selected" visar vilken flik man är på -->
+                    <li><a href="turism.html">Turism</a></li>
+                    <li><a href="medlem.html">Medlem</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li class="selected"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav> <!--end menubar-->
+        </section> <!--end header-->
+        <section id="site_content">
+            <div id="banner"></div>
+            <section id="sidebar_container">
+                <section class="sidebar">
+                    <div class="sidebar_top"></div>
+                    <section class="sidebar_item">
+                        <h3>Djupviks temperatur</h3>
+                        <p id="temp"></p>
+                    </section>
+                    <div class="sidebar_base"></div>
+                </section> <!-- end sidebar 1 -->
+                <section class="sidebar">
+                    <div class="sidebar_top"></div>
+                    <section class="sidebar_item">
+                        <h3>Länkar</h3>
+                        <ul>
+                            <li><a href="english.html">For english speaking</a></li>
+                            <li><a href="bilder.html">Fler bilder</a></li>
+                            <li><a href="gästhamn.html">Information om Gästhamnen</a></li>
+                        </ul>
+                    </section>
+                    <div class="sidebar_base"></div>
+                </section> <!-- end sidebar 2 -->
+            </section> <!--end sidebar-->
+            <section id="content">
+                <h2>Kontaktuppgifter</h2>
+                <p>Hamnfogde Bo Lautin, mobil 0707-920310</p>
+                <p>
+                    Djupviks hamnförening<br />
+                    c/o Ekholm<br />
+                    Eksta Hägur 170<br />
+                    623 54 Klintehamn
+                </p>
+                <h2>Kontaktformulär</h2>
+                <form action="kontakt.html" method="post">
+                    <ul>
+                        <li>
+                            <label for="form-header">Ärende:</label>
+                            <input type="text" id="form-header" name="form-header">
+                        </li>
+                        <li>
+                            <label for="form-name">Namn:</label>
+                            <input type="text" id="form-name" name="form-name">
+                        </li>
+                        <li>
+                            <label for="form-email">Email:</label>
+                            <input type="text" id="form-email" name="form-email">
+                        </li>
+                        <li>
+                            <label for="form-tel">Telefon:</label>
+                            <input type="text" id="form-tel" name="form-tel">
+                        </li>
+                        <li>
+                            <label for="form-description">Beskrivning av ärendet:</label>
+                            <input type="text" id="form-description" name="form-description">
+                        </li>
+                        <li>
+                            <p class="bold">Inom vilket område gäller ärendet?</p>
+                            <label><input type="radio" name="form-setup" value="Båtplats"> Båtplats </label>
+                            <label><input type="radio" name="form-setup" value="Medlemskap"> Medlemskap </label>
+                            <label><input type="radio" name="form-setup" value="Övrigt"> Övrigt </label>
+                        </li>
+                        <li>
+                            <p class="bold">Hur vill du att vi kontaktar dig?</p>
+                            <label><input type="radio" name="form-setup2" value="Mail"> Via Email </label>
+                            <label><input type="radio" name="form-setup2" value="Tel"> Via Telefon </label>
+                        </li>
+
+                        <li>
+                            <input type="Submit" id="submit" value="Skicka meddelande">
+                        </li>
+                    </ul>
+                </form>
+            </section> <!--end content box-->
+        </section> <!--end site_content-->
+        <section id="footer">
+            <nav><a href="index.html">Start</a> | <a href="turism.html">Turism</a> | <a href="medlem.html">Medlem</a> | <a href="historia.html">Historia</a> | <a href="kontakt.html">Kontakta oss</a></nav>
+            <p>Copyright &copy; Djupviks Hamnförening c/o Ekholm</p>
+        </section>
+    </section>
+</body>
+</html>
